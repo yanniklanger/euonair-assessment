@@ -50,12 +50,12 @@ Ziel ist es, Ihre Fähigkeiten in Python sowie im effektiven Einsatz von KI-Tech
   
 #### Fehlerbehandlung
 
-- Falls bestimmte Daten (z. B. Abstracts oder DOI) nicht verfügbar sind, soll Ihr Code damit robust umgehen können (z. B. Eintrag mit "N/A" oder Auslassen dieses Felds).
+- Falls bestimmte Daten (z. B. Abstracts oder DOI) nicht verfügbar sind, soll Ihr Code damit robust umgehen können (z. B. Eintrag mit ```N/A``` oder Auslassen dieses Felds).
 
 #### Strukturierte Speicherung
 
 - Speichern Sie die Ergebnisse in einem maschinenlesbaren Format (z. B. CSV, JSON, Pandas DataFrame, relationale Datenbank).
-- Achten Sie auf eindeutige Dateibenennungen und ggf. eine verzeichnisbasierte Struktur (z. B. in einem Ordner ```*data/*```).
+- Achten Sie auf eindeutige Dateibenennungen und ggf. eine verzeichnisbasierte Struktur (z. B. in einem Ordner ```data/```).
 
 ### 1.3 KI-gestützte Analyse
 
