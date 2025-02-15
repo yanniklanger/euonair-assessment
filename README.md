@@ -177,7 +177,7 @@ Ziel ist es, Ihre Fähigkeiten in Python sowie im effektiven Einsatz von KI-Tech
 
 ### 7. Abgabetermin und Kontakt
 
-- Abgabefrist: 20.02.2025
+- Abgabefrist: Sonntag, 23.02.2025, 20:00 Uhr (MEZ)
 - Einreichung: GitHub-/Download-Link oder GitHub-Pull-Request
 - Kontakt für Rückfragen: carsten.lanquillon@hs-heilbronn.de
 
