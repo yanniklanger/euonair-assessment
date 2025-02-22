@@ -39,10 +39,10 @@ Das Projekt umfasst:
   Die Ergebnisse werden in CSV-Dateien exportiert. Es gibt zwei Varianten:
   - **Ohne KI-Ergebnisse:** Nur Basisdaten der Publikationen.
   - **Mit KI-Ergebnissen:** Zusätzlich zu den Basisdaten werden Ergebnisse der KI-Analysen (regelbasiert und LLM-gestützt) in separaten Spalten ausgegeben.
-  Beide CSV-Dateien werden zusammen mit einer Metadaten-Datei (mit den Suchparametern, Filterkriterien und statistischen Informationen) im Unterordner `Data` gespeichert – pro Exportvorgang wird ein neuer Dateiname (mit Timestamp) generiert.
+  - Beide CSV-Dateien werden zusammen mit einer Metadaten-Datei (mit den Suchparametern, Filterkriterien und statistischen Informationen) im Unterordner `Data` gespeichert – pro Exportvorgang wird ein neuer Dateiname (mit Timestamp) generiert.
 
 - **Rate Limit Handling**
-- Um temporäre Fehler und Rate Limits abzufangen, werden für alle externen HTTP-Anfragen (z. B. bei der arXiv-API-Abfrage und der PDF-Text-Extraktion) Retry-Mechanismen mittels der Bibliothek tenacity eingesetzt. Dabei werden fehlgeschlagene Anfragen bis zu fünfmal mit exponentiellem Backoff erneut ausgeführt, um sicherzustellen, dass temporäre Netzwerkprobleme oder Rate-Limit-Situationen nicht zum sofortigen Abbruch führen.
+Um temporäre Fehler und Rate Limits abzufangen, werden für alle externen HTTP-Anfragen (z. B. bei der arXiv-API-Abfrage und der PDF-Text-Extraktion) Retry-Mechanismen mittels der Bibliothek tenacity eingesetzt. Dabei werden fehlgeschlagene Anfragen bis zu fünfmal mit exponentiellem Backoff erneut ausgeführt, um sicherzustellen, dass temporäre Netzwerkprobleme oder Rate-Limit-Situationen nicht zum sofortigen Abbruch führen.
 ---
 
 ## Projektstruktur
