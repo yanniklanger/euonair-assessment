@@ -399,7 +399,7 @@ if st.button("Exportiere Ergebnisse (Ohne KI Ergebnisse)"):
         os.makedirs(data_folder)
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     file_path_csv = os.path.join(data_folder, f"ergebnisse_ohne_ki_{timestamp}.csv")
-    file_path_meta = os.path.join(data_folder, f"metadata_{timestamp}.csv")
+    file_path_meta = os.path.join(data_folder, f"metadata_ohne_ki_{timestamp}.csv")
     with open(file_path_csv, "w", encoding="utf-8") as f:
         f.write(csv_without_ai)
     with open(file_path_meta, "w", encoding="utf-8") as f:
@@ -417,7 +417,7 @@ if st.button("Exportiere Ergebnisse (Mit KI Ergebnisse)"):
         os.makedirs(data_folder)
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     file_path_csv = os.path.join(data_folder, f"ergebnisse_mit_ki_{timestamp}.csv")
-    file_path_meta = os.path.join(data_folder, f"metadata_{timestamp}.csv")
+    file_path_meta = os.path.join(data_folder, f"metadata_mit_ki_{timestamp}.csv")
     with open(file_path_csv, "w", encoding="utf-8") as f:
         f.write(csv_with_ai)
     with open(file_path_meta, "w", encoding="utf-8") as f:

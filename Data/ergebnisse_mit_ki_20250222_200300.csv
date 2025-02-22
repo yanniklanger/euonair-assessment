@@ -12,7 +12,7 @@ regarding the adoption of artificial intelligence-based tools for personalizing
 teaching.",http://arxiv.org/abs/2412.18617v1,https://doi.org/10.48550/arXiv.2412.18617,,"Setup and task  
 The aim of this study is to create a custom GPT based on Inquiry  Based Learning  (IBL Educator 
 GPT) [9], so that teacher s can have an educational framework when interacting with ChatGPT 
-and receive several perspectives concerning the subject they want to teach [10,11] .",,What is the impact of using GenAI tools on teachers' perspectives regarding the adoption of AI in the classroom?,To evaluate the effectiveness of a custom GPT (IBL Educator GPT) in improving teachers' perspectives on the use of AI tools in the classroom.,"The development of a custom GPT (IBL Educator GPT) based on Inquiry Based Learning for physics teachers, which has shown to improve teachers' perspectives on the adoption of AI tools in the classroom."
+and receive several perspectives concerning the subject they want to teach [10,11] .",,,,
 Beyond Text-to-Text: An Overview of Multimodal and Generative Artificial   Intelligence for Education Using Topic Modeling,Raija Hämäläinen,2024-09-24T18:11:24Z,"Generative artificial intelligence (GenAI) can reshape education and
 learning. While large language models (LLMs) like ChatGPT dominate current
 educational research, multimodal capabilities, such as text-to-speech and
@@ -41,4 +41,4 @@ text to speech 461
 Text-to-speech was the next common keyword after language models followed
 by text-to-image, text-to-text, and speech-to-text, reflecting the maturity of
 technologies [i.e., 38, 44, 22, 2] and diffusion of innovations into educational
-domain (Table 1, Figure 2).",How is artificial intelligence being utilized in education?,To explore the current trends and gaps in the use of generative AI for education,The paper provides an overview of current trends in generative AI for education and highlights the need for more balanced attention across different AI modalities and educational levels. It also suggests opportunities for future exploration of multimodal technologies to fully realize the transformative potential of artificial intelligence in education.
+domain (Table 1, Figure 2).",,,
