@@ -1,0 +1,63 @@
+Title,Author,Published,Summary,Article Link,DOI
+Developing a custom GPT based on Inquiry Based Learning for Physics   Teachers,Dimitrios Gousopoulos,2024-12-13T13:08:53Z,"Generative Artificial Intelligence (GenAI) has emerged as a valuable
+assistant in many fields such as marketing, finance, project management, and
+education. In education, many GenAI tools have been developed to aid teachers
+in preparing proper educational material and offering personalized learning to
+their students, tailored to their educational needs. In this paper, we present
+a custom GPT (IBL Educator GPT) that is designed and developed based on
+Inquiry-based Learning and offers physics teachers a framework in which they
+can interact with ChatGPT and design educational strategies. The utilization of
+the IBL Educator GPT has led to an improvement in teachers' perspectives
+regarding the adoption of artificial intelligence-based tools for personalizing
+teaching.",http://arxiv.org/abs/2412.18617v1,https://doi.org/10.48550/arXiv.2412.18617
+Beyond Text-to-Text: An Overview of Multimodal and Generative Artificial   Intelligence for Education Using Topic Modeling,Raija Hämäläinen,2024-09-24T18:11:24Z,"Generative artificial intelligence (GenAI) can reshape education and
+learning. While large language models (LLMs) like ChatGPT dominate current
+educational research, multimodal capabilities, such as text-to-speech and
+text-to-image, are less explored. This study uses topic modeling to map the
+research landscape of multimodal and generative AI in education. An extensive
+literature search using Dimensions.ai yielded 4175 articles. Employing a topic
+modeling approach, latent topics were extracted, resulting in 38 interpretable
+topics organized into 14 thematic areas. Findings indicate a predominant focus
+on text-to-text models in educational contexts, with other modalities
+underexplored, overlooking the broader potential of multimodal approaches. The
+results suggest a research gap, stressing the importance of more balanced
+attention across different AI modalities and educational levels. In summary,
+this research provides an overview of current trends in generative AI for
+education, underlining opportunities for future exploration of multimodal
+technologies to fully realize the transformative potential of artificial
+intelligence in education.",http://arxiv.org/abs/2409.16376v1,https://doi.org/10.48550/arXiv.2409.16376
+Generativism: the new hybrid,B. Mairead Pratschke,2023-09-21T20:23:58Z,"Generative Artificial Intelligence (GenAI) in Education has in a few short
+months moved from being the topic of discussion around speculative education
+futures to a very concrete reality. It is clear that the future of education,
+as all industries, is collaboration with GenAI. GenAI attributes make it well
+suited for social and constructivist approaches to learning that value
+collaboration, community and the construction of knowledge and skills through
+active learning. This article presents an approach to designing education in
+collaboration with GenAI, based on digital education frameworks adapted for
+this new hybrid of the AI age.",http://arxiv.org/abs/2309.12468v1,https://doi.org/10.48550/arXiv.2309.12468
+Early Adoption of Generative Artificial Intelligence in Computing   Education: Emergent Student Use Cases and Perspectives in 2023,Gabe Fierro,2024-11-17T20:17:47Z,"Because of the rapid development and increasing public availability of
+Generative Artificial Intelligence (GenAI) models and tools, educational
+institutions and educators must immediately reckon with the impact of students
+using GenAI. There is limited prior research on computing students' use and
+perceptions of GenAI. In anticipation of future advances and evolutions of
+GenAI, we capture a snapshot of student attitudes towards and uses of yet
+emerging GenAI, in a period of time before university policies had reacted to
+these technologies. We surveyed all computer science majors in a small
+engineering-focused R1 university in order to: (1) capture a baseline
+assessment of how GenAI has been immediately adopted by aspiring computer
+scientists; (2) describe computing students' GenAI-related needs and concerns
+for their education and careers; and (3) discuss GenAI influences on CS
+pedagogy, curriculum, culture, and policy. We present an exploratory
+qualitative analysis of this data and discuss the impact of our findings on the
+emerging conversation around GenAI and education.",http://arxiv.org/abs/2411.11166v1,https://doi.org/10.48550/arXiv.2411.11166
+Education in the age of Generative AI: Context and Recent Developments,Geber Ramalho,2023-08-17T19:56:57Z,"With the emergence of generative artificial intelligence, an increasing
+number of individuals and organizations have begun exploring its potential to
+enhance productivity and improve product quality across various sectors. The
+field of education is no exception. However, it is vital to notice that
+artificial intelligence adoption in education dates back to the 1960s. In light
+of this historical context, this white paper serves as the inaugural piece in a
+four-part series that elucidates the role of AI in education. The series delves
+into topics such as its potential, successful applications, limitations,
+ethical considerations, and future trends. This initial article provides a
+comprehensive overview of the field, highlighting the recent developments
+within the generative artificial intelligence sphere.",http://arxiv.org/abs/2309.12332v1,https://doi.org/10.48550/arXiv.2309.12332

@@ -16,8 +16,8 @@ import datetime
 from tenacity import retry, wait_exponential, stop_after_attempt, retry_if_exception_type
 import requests.exceptions
 
-st.title("arXiv Search App mit DOI-Webscraping")
-st.write("Gib deine Suchterme ein und wähle, ob diese mit AND oder OR verknüpft werden sollen.")
+st.title("arXiv Search App")
+st.write("Geben Sie Suchterme ein und wählen Sie, ob diese mit AND oder OR verknüpft werden sollen.")
 
 # Debug: Aktuelles Arbeitsverzeichnis anzeigen
 cwd = os.getcwd()
@@ -33,8 +33,8 @@ if not os.path.exists(os.path.join(cwd, "apikey.py")):
 term1 = st.text_input("Suchterm 1", "generative artificial intelligence")
 term2 = st.text_input("Suchterm 2", "education")
 operator = st.selectbox("Operator auswählen", ["AND", "OR"])
-max_results = st.slider("Max results", min_value=1, max_value=50, value=10)
-year_range = st.slider("Filter by publication year", min_value=1990, max_value=2025, value=(2000, 2025))
+max_results = st.slider("Maximale Anzahl Ergebnisse", min_value=1, max_value=50, value=10)
+year_range = st.slider("Filter nach Veröffentlichungsjahr", min_value=1990, max_value=2025, value=(2000, 2025))
 
 def get_doi_from_article(article_url):
     headers = {"User-Agent": "Mozilla/5.0"}
@@ -88,14 +88,14 @@ def extract_text_from_pdf(pdf_url):
         return None
 
 # Suchergebnisse in st.session_state speichern
-if st.button("Search"):
+if st.button("Suche"):
     if term1 or term2:
         if term1 and term2:
             search_query = f'"{term1}" {operator} "{term2}"'
         else:
             search_query = f'"{term1}"'
     else:
-        st.error("Bitte gib mindestens einen Suchterm ein.")
+        st.error("Bitte geben Sie mindestens einen Suchterm ein.")
         st.stop()
     
     st.session_state["search_params"] = {
@@ -145,10 +145,14 @@ def update_all_analyses():
     results = st.session_state.get('results', [])
     for i, entry in enumerate(results):
         pdf_link = next((link.href for link in entry.links if link.get("type") == "application/pdf"), None)
+        # Fallback hinzugefügt
         if pdf_link:
             input_for_analysis = pdf_link
-        else:
+        elif entry.summary:
             input_for_analysis = entry.summary
+        else:
+            input_for_analysis = "Keine Daten verfügbar"
+            st.warning(f"Keine Daten für die Analyse bei Eintrag: {entry.get('title', 'Unbekannt')}")
 
         # KI Analyse (AI_Analysis.py)
         analysis_key = f"analysis_result_{i}"
@@ -199,16 +203,20 @@ if 'results' in st.session_state:
             st.write("**DOI:** N/A")
         
         # Input für die Analyse: PDF-Link falls vorhanden, sonst Abstract
+        # Fallback hinzugefügt
         pdf_link = next((link.href for link in entry.links if link.get("type") == "application/pdf"), None)
         if pdf_link:
             input_for_analysis = pdf_link
             st.markdown("**Full Text:** [Download PDF]({})".format(pdf_link))
-            spinner_message = "pdf verfügbar - pdf wird analysiert"
-        else:
+            spinner_message = "PDF verfügbar – PDF wird analysiert"
+        elif entry.summary:
             input_for_analysis = entry.summary
             st.write("**Kein PDF vorhanden, Abstract wird analysiert.**")
-            spinner_message = "pdf nicht verfügbar - abstract wird analysiert"
-        
+            spinner_message = "PDF nicht verfügbar – Abstract wird analysiert"
+        else:
+            input_for_analysis = "Keine Daten verfügbar"
+            spinner_message = "Weder PDF noch Abstract verfügbar – Keine Analyse möglich"
+            st.warning("Keine Daten für die Analyse verfügbar.")
         # KI Analyse-Button: Startet AI_Analysis.py für diesen Eintrag
         analysis_key = f"analysis_result_{i}"
         if analysis_key not in st.session_state:
